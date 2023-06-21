@@ -18,7 +18,6 @@ edited_df = st.data_editor(
             min_value=1,
             max_value=5,
             step=1,
-            format="%d ⭐",
         ),
         "is_widget": "위젯인가 ?",
     },
