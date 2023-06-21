@@ -27,8 +27,6 @@ edited_df = st.data_editor(df, num_rows="fixed",hide_index=False)
 
 edited_df = st.data_editor(df, num_rows="fixed",hide_index=False, column_order=('is_widget','명령어','평점'))
 
-edited_df = st.data_editor(df, num_rows="fixed",hide_index=False, column_order=None)
-
 edited_df = st.data_editor(
     df,
     column_config={
