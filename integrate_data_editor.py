@@ -32,8 +32,8 @@ edited_df = st.data_editor(df, num_rows="fixed",hide_index=False, column_order=N
 edited_df = st.data_editor(
     df,
     column_config={
-        "command": "Streamlit 명령어",
-        "rating": st.column_config.NumberColumn(
+        "명령어": "Streamlit 명령어",
+        "평점": st.column_config.NumberColumn(
             "당신이 주는 평점",
             help="이 명령어에 몇점이나 주시겠습니까 (1-5)?",
             min_value=1,
