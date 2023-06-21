@@ -9,30 +9,48 @@ df = pd.DataFrame(
    ]
 )
 edited_df = st.data_editor(df, num_rows="fixed")
-
 favorite_command = edited_df.loc[edited_df["평점"].idxmax()]["명령어"]
 st.markdown(f"너의 가장 선호하는 명령어는 **{favorite_command}** 🎈")
 
 edited_df = st.data_editor(df, width = 2000, num_rows="fixed")
+favorite_command = edited_df.loc[edited_df["평점"].idxmax()]["명령어"]
+st.markdown(f"너의 가장 선호하는 명령어는 **{favorite_command}** 🎈")
 
 edited_df = st.data_editor(df, width = None, num_rows="fixed")
+favorite_command = edited_df.loc[edited_df["평점"].idxmax()]["명령어"]
+st.markdown(f"너의 가장 선호하는 명령어는 **{favorite_command}** 🎈")
 
 edited_df = st.data_editor(df, height = 500, num_rows="fixed")
+favorite_command = edited_df.loc[edited_df["평점"].idxmax()]["명령어"]
+st.markdown(f"너의 가장 선호하는 명령어는 **{favorite_command}** 🎈")
 
 edited_df = st.data_editor(df, height = None, num_rows="fixed")
+favorite_command = edited_df.loc[edited_df["평점"].idxmax()]["명령어"]
+st.markdown(f"너의 가장 선호하는 명령어는 **{favorite_command}** 🎈")
 
 edited_df = st.data_editor(df, width = 200, use_container_width = True, num_rows="fixed")
+favorite_command = edited_df.loc[edited_df["평점"].idxmax()]["명령어"]
+st.markdown(f"너의 가장 선호하는 명령어는 **{favorite_command}** 🎈")
 
 edited_df = st.data_editor(df, width = 200, use_container_width = False, num_rows="fixed")
-
+favorite_command = edited_df.loc[edited_df["평점"].idxmax()]["명령어"]
+st.markdown(f"너의 가장 선호하는 명령어는 **{favorite_command}** 🎈")
 
 edited_df = st.data_editor(df, num_rows="fixed",hide_index=True)
+favorite_command = edited_df.loc[edited_df["평점"].idxmax()]["명령어"]
+st.markdown(f"너의 가장 선호하는 명령어는 **{favorite_command}** 🎈")
 
 edited_df = st.data_editor(df, num_rows="fixed",hide_index=False)
+favorite_command = edited_df.loc[edited_df["평점"].idxmax()]["명령어"]
+st.markdown(f"너의 가장 선호하는 명령어는 **{favorite_command}** 🎈")
 
 edited_df = st.data_editor(df, num_rows="fixed",hide_index=False, column_order=('is_widget','명령어','평점'))
+favorite_command = edited_df.loc[edited_df["평점"].idxmax()]["명령어"]
+st.markdown(f"너의 가장 선호하는 명령어는 **{favorite_command}** 🎈")
 
 edited_df = st.data_editor(df, num_rows="fixed",hide_index=False, column_order=None)
+favorite_command = edited_df.loc[edited_df["평점"].idxmax()]["명령어"]
+st.markdown(f"너의 가장 선호하는 명령어는 **{favorite_command}** 🎈")
 
 edited_df = st.data_editor(
     df,
@@ -55,7 +73,5 @@ favorite_command = edited_df.loc[edited_df["평점"].idxmax()]["명령어"]
 st.markdown(f"최애 명령어는 **{favorite_command}** 🎈")
 
 edited_df = st.data_editor(df, num_rows="dynamic")
-
 favorite_command = edited_df.loc[edited_df["평점"].idxmax()]["명령어"]
-
 st.markdown(f"너의 가장 선호하는 명령어는 **{favorite_command}** 🎈")
