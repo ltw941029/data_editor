@@ -26,5 +26,5 @@ edited_df = st.data_editor(
     hide_index=True,
 )
 
-favorite_command = edited_df.loc[edited_df["평점"].idxmax()]["command"]
+favorite_command = edited_df.loc[edited_df["평점"].idxmax()]["명령어"]
 st.markdown(f"최애 명령어는 **{favorite_command}** 🎈")
