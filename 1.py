@@ -11,4 +11,3 @@ df = pd.DataFrame(
 
 edited_df = st.data_editor(df, num_rows="fixed",hide_index=True)
 edited_df = st.data_editor(df, num_rows="fixed",hide_index=False)
-edited_df = st.data_editor(df, num_rows="fixed")
